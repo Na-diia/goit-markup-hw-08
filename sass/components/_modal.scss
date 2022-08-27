@@ -1,0 +1,150 @@
+.modal__title {
+    @include font(20px, 1.15, 700, 0.03em);
+    text-align: center;
+    color: $firstTitleColor;
+
+    margin-bottom: 12px;
+}
+
+.modal__field {
+    margin-bottom: 10px;
+}
+
+.modal__text {
+    @include font(12px, 1.16, 400, 0.01em);
+    color: $firstTextColor;
+    margin-bottom: 8px;
+}
+
+.modal__input {
+    height: 40px;
+    width: 448px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    padding-top: 12px;
+    padding-left: 42px;
+    padding-bottom: 12px;
+
+    transition: border-color 250ms $timingFunction;
+
+    &:focus {
+        border-color: $accentColor;
+    }
+
+    &-wrap {
+        position: relative;
+    }
+}
+
+.modal__person-icon,
+.modal__phone-icon,
+.modal__email-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    fill: $firstTitleColor;
+
+    transition: fill 250ms $timingFunction;
+
+    .modal__input:focus+& {
+         fill: $accentColor;
+    }
+}
+
+.modal__comment {
+    margin-bottom: 20px;
+}
+
+.modal__check-wrap {
+    margin-bottom: 30px;
+}
+
+.modal__policy-text {
+    @include font(14px, 1.71, 400, 0.03em);
+    color: $firstTextColor;
+
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.modal__policy-text span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid $firstTextColor; 
+    border-radius: 2px;
+    margin-right: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal__checkbox:checked+ & {
+        background-color: $accentColor;
+        border: none;
+    }
+}
+
+.modal__check-icon {
+    fill: transparent;
+
+    .modal__checkbox:checked+.modal__policy-text & {
+        fill: $secondBtnColor;
+    }
+}
+
+.modal__check-anchor {
+    color: $accentColor;
+    text-decoration: underline;
+}
+
+.modal__submit-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__submit-button {
+    font-family: inherit;
+    @include font(16px, 1.87, 700, 0.06em);
+    color: $secondBtnColor;
+    background-color: $accentColor;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px $shadowColor;
+
+    padding: 10px 52px;
+    min-width: 200px;
+    min-height: 50px;
+    display: inline-block;
+
+    transition: background-color 250ms $timingFunction;
+
+    &:focus,
+    &:hover {
+        background: $hoverBtnColor;
+  }
+}
+
+.feedback {
+    resize: none;
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    outline: transparent;
+
+    transition: border-color 250ms $timingFunction;
+
+    &::placeholder {
+        @include font(12px, 1.16, 400, 0.01em);
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+         border-color: $accentColor;
+    }
+}

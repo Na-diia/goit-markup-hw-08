@@ -1,0 +1,80 @@
+.pictures__title,
+.workers__title,
+.clients__title {
+    @include font(36px, 1.16, 700, 0.03em);
+    color: $firstTitleColor;
+
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+@media screen and (min-width:320px) and (max-width:1199px) {
+    .pictures__title{
+        display: none;
+    }
+
+    .pictures__list{
+        display: none;
+    }
+
+    .workers__title{
+     @include font(28px, 1.17, 700, 00.03em);
+     padding-top: 60px;
+     margin-bottom: 30px;}
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    .clients__title {
+        @include font(28px, 1.17, 700, 0.03em);
+        padding-top: 60px;
+        margin-bottom: 30px;
+    }
+}
+
+.benefits__list,
+.pictures__list,
+.workers__list {
+    display: flex;
+    gap: $cardSetGap;
+
+    @media screen and (min-width:320px) and (max-width:767px) {
+    display: block;
+    }
+     
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        flex-wrap: wrap;
+    }    
+}
+
+@media screen and (min-width:320px) and (max-width:1199px){
+    .pictures__list{
+        display: none;
+    }
+}
+
+
+.navigation__link:hover,
+.navigation__anchor:hover,
+.contacts__tel:hover,
+.contacts__email:hover,
+.footer__address:hover,
+.button-item:hover,
+.footer__email:hover,
+.footer__tel:hover,
+.contacts--email-icon:hover,
+.contacts--tel-icon:hover {
+    color: $accentColor;
+}
+
+.navigation__link:focus,
+.navigation__anchor:focus,
+.contacts__tel:focus,
+.contacts__email:focus,
+.footer__address:focus,
+.footer__email:focus,
+.footer__tel:focus,
+.contacts--email-icon:focus,
+.contacts--tel-icon:focus {
+    color: $accentColor;
+}

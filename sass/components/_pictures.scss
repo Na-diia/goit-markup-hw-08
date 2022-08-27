@@ -1,0 +1,25 @@
+.pictures__item {
+    position: relative;
+}
+
+.pictures__text {
+    @include font(14px, 1.14, 700, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondTitleColor;
+}
+
+.pictures__box {
+    background-color: $secondBackgroundColor;
+    background: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+    width: 370px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

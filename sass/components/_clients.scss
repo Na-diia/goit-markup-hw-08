@@ -1,0 +1,48 @@
+.clients {
+    @media screen and(min-width:768px) and (max-width:1199px){
+        padding-top: 60px;
+    }
+
+    &__list {
+        display: flex;
+        gap: $cardSetGap;
+    
+        @media screen and(min-width:480px){
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__link {
+        width: 170px;
+        height: 92px;
+        border: 1px solid $socIconColor;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        transition: background-color, border 250ms $timingFunction;
+    
+        &:hover,
+         &:focus {
+            border: 1px solid $accentColor;
+            background-color: $secondBtnColor;
+        }
+
+        @media screen and (min-width:768px) and (max-width:1199px) {
+           width: 226px; 
+        }
+    }
+
+    &--icon {
+        fill: $socIconColor;
+        transition: fill 250ms $timingFunction;
+    
+        .clients__link:hover &,
+        .clients__link:focus & {
+        fill: $accentColor;
+        }
+    }
+} 
