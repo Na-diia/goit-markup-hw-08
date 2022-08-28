@@ -1,5 +1,4 @@
 .benefits__box-icon {
-    width: 270px;
     height: 120px;
     background-color: $firstBackgroundColor;
     margin-bottom: 30px;
@@ -18,6 +17,9 @@
     @media screen and (min-width:768px) and (max-width:1199px) {
         width: 354px;
     }
+
+    @media screen and (min-width:1200px) {
+    width: 270px;}
 }
 
 @media screen and (min-width:768px) and (max-width:1199px) {

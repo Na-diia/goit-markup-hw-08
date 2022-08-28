@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +25,44 @@
  </nav>
  <div class="contacts__wrap">
  <ul class="contacts flex ">
-<li class="contacts__item"><a class="contacts__email" href="malito:info@devstudio.com"><svg class="contacts--email-icon" width="16px" height="12px"><use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
+<li class="contacts__item"><a class="contacts__email" href="malito:info@devstudio.com"><svg class="contacts--email-icon" width="16px" height="12px"><use href="./images/icons.svg#icon-envelope"></use> </svg>info@devstudio.com</a></li>
 <li class="contacts__item"><a class="contacts__tel" href="+380961111111"><svg class="contacts--tel-icon" width="10px" height="16px"><use href="./images/icons.svg#icon-tel"></use></svg>+380 96 111 11 11</a></li>
  </ul></div>
+ <button class="menu-open" aria-expanded="false" aria-controls="mobile-menu" type="button">
+    <svg>
+      <use href="./images/icons.svg" width="24px" height="16px"></use>
+    </svg>
 </div>
+ </div>
+ <div class="mob-menu" id="mob-menu">
+    <div class="mob-menu__container">
+    <button type="button" class="mob-menu__btn is-open"
+    data-menu-button
+    aria-expanded="false">
+        <svg>
+            <use href="./images/icons.svg#icon-vector"  class="icon-close" height="18.67px" width="18.67px"></use>
+        </svg>
+    </button>
+    <nav class="mob-menu__nav">
+        <ul class="mob-menu__list">
+            <li class="mob-menu__item">Студія</li>
+            <li class="mob-menu__item">Портфоліо</li>
+            <li class="mob-menu__item">Контакти</li>
+        </ul>
+    </nav>   
+    <div class="mob-menu__commun">
+      <ul class="mob-menu__contacts">
+        <li class="mob-menu--tel"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+        <li class="mob-email--item"><a href="malito:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+<ul class="mob-menu__soc">
+    <li><a href="" >Instagram</a></li>
+    <li><a href="" >Twitter</a></li>
+    <li><a href="" >Facebook</a></li>
+    <li><a href="" >LinkedIn</a></li>
+</ul>
+    </div> 
+    </div>
  </div>
 </header>
 <main> 
@@ -77,13 +111,28 @@
     <div class="pictures container">
     <h2 class="pictures__title">Чим ми займаємося</h2>
     <ul class="pictures__list">
-           <li class="pictures__item"><img  width="370" src="images/image1.jpg" alt="Робочий стіл" height="294">
+           <li class="pictures__item">
+            <picture>
+                <source srcset="./images/picture1-1x.jpg  1x, 
+                ./images/picture1-2x.jpg  2x" />
+                <img  width="370" src="./images/picture1-1x.jpg" alt="Робочий стіл" height="294">
+            </picture>
         <div class="pictures__box"><p class="pictures__text">ДЕКСТОПНІ ДОДАТКИ</p></div>
         </li>
-           <li class="pictures__item"><img  width="370" src="images/image2.jpg" alt="Робочий стіл" height="294">
+           <li class="pictures__item">
+            <picture>
+                <source srcset="./images/picture2-1x.jpg  1x, 
+                ./images/picture2-2x.jpg  2x" />
+                <img  width="370" src="./images/picture2-1x.jpg" alt="Робочий стіл" height="294">
+            </picture>
         <div class="pictures__box"><p class="pictures__text">МОБІЛЬНІ ДОДАТКИ</p></div>
         </li> 
-           <li class="pictures__item"><img  width="370" src="images/image3.jpg" alt="Робочий стіл" height="294">
+           <li class="pictures__item">
+            <picture>
+                <source srcset="./images/picture3-1x.jpg  1x, 
+                ./images/picture3-2x.jpg  2x" />
+            <img  width="370" src="./images/picture3-1x.jpg" alt="Робочий стіл" height="294">
+            </picture>
         <div class="pictures__box"><p class="pictures__text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p></div>
         </li>
     </ul>
@@ -94,7 +143,21 @@
   <h2 class="workers__title">Наша команда</h2>
   <ul class="workers__list">
    <li class="workers__item">
-        <div class="workers__box"><img src="images/worker1.jpg" alt="Наш працівник" width="270" height="260">
+        <div class="workers__box">
+            <picture>
+                <source srcset="./images/workers1-desk-1.jpg   1x, 
+                               ./images/workers1-desk-2x.jpg   2x" 
+                        media="min-width:1200px"/>
+                <source srcset="./images/workers1-tab-1x.jpg  1x, 
+                               ./images/workers1-tab-2x.jpg  2x"
+                         media="min-width:768px"/>
+                <source srcset="./images/workers1-mob-1x.jpg   1x, 
+                                ./images/workers1-mob-2x.jpg   2x"
+                        media="max-width:767px"/>
+            <img src="./images/workers1-mob-1x.jpg"
+            src="images/worker1.jpg" 
+            alt="Наш працівник">
+            </picture>
         <div class="workers--secondary-box"><h3 class="workers__name">Ігор Демьяненко</h3>
         <p class="workers__text">Product Designer</p>
         <ul class="social">
@@ -110,7 +173,18 @@
     </div>
     </li>
     <li class="workers__item"><div class="workers__box">
-        <img src="images/worker2.jpg" alt="Наш працівник" width="270" height="260">
+         <picture>
+            <source srcset="./images/workers2-desk-1.jpg  1x,
+                           ./images/workers2-desk-2x.jpg  2x"
+                           media="min-width=1200px"/>
+           <source srcset="./images/workers2-tab-1x.jpg  1x,  
+                          ./images/workers2-tab-2x.jpg  2x"
+                         media="min-width:768px" />  
+            <source srcset="./images/workers2-mob-1x.jpg  1x, 
+                            ./images/workers2-mob-2x.jpg  2x"
+                        media="max-width:767px">    
+             <img src="./images/workers2-mob-1x.jpg" alt="Наш працівник">                    
+         </picture>
         <div class="workers--secondary-box"><h3 class="workers__name">Ольга Репіна</h3>
         <p class="workers__text">Frontend Developer</p>
          <ul class="social list ">
@@ -124,7 +198,18 @@
     </div>
     </li>
     <li class="workers__item"><div class="workers__box">
-        <img src="images/worker3.jpg" alt="Наш працівник" width="270" height="260">
+        <picture>
+          <source srcset="./images/workers3-desk-1.jpg  1x,
+                          ./images/workers3-desk-2x.jpg  2x"
+                          media="min-width:1200px" />
+             <source srcset="./images/workers3-tab-1x.jpg  1x, 
+                            ./images/workers3-tab-2x.jpg  2x"
+                            media="min-width:768px" />   
+              <source srcset="./images/workers3-mob-1x.jpg  1x, 
+                            ./images/workers3-mob-2x.jpg  2x"
+                         media="max-width:767px">            
+            <img src="./images/workers3-mob-1x.jpg" alt="Наш працівник">
+        </picture>
        <div class="workers--secondary-box"><h3 class="workers__name">Микола Тарасов</h3>
         <p class="workers__text">Marketing</p>
         <ul class="social list">
@@ -141,7 +226,18 @@
     </div>
     </li>
     <li class="workers__item"><div class="workers__box">
-        <img src="images/worker4.jpg" alt="Наш працівник" width="270" height="260">
+        <picture>
+            <source srcset="./images/workers4-desk-1.jpg  1x, 
+                            ./images/workers4-desk-2x.jpg  2x"
+                            media="min-width:1200px" />
+            <source srcset="./images/workers4-tab-1x.jpg  1x,
+                            ./images/workers4-tab-2x.jpg  2x"
+                            media="min-width:768px" />
+            <source srcset="./images/workers4-mob-1x.jpg  1x,
+                            ./images/workers4-mob-2x.jpg  2x"
+                            media="max-width:767px" />              
+            <img src="./images/workers4-mob-1x.jpg" alt="Наш працівник">
+        </picture>
        <div class="workers--secondary-box"><h3 class="workers__name">Михайло Єрмаков</h3>
         <p class="workers__text">UI Designer</p>
         <ul class="social list">
@@ -301,5 +397,6 @@
     </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

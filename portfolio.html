@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +56,18 @@
             <ul class="projects"> 
                 <li class="projects__item">
                     <div class="projects__wrap">
-                     <img class="projects__image" src="./images/portfolio1.jpg" alt="Технокряк" width="370" height="404">
+                        <picture>
+                            <source srcset="./images/projects1-desk-1x.jpg 1x,
+                                         ./images/projects1-desk-2x.jpg 2x"
+                                         media="min-width:1200px" />
+                            <source srcset="./images/projects1-tab-1x.jpg 1x,
+                                         ./images/projects1-tab-2x.jpg 2x"
+                                         media="min-width:768px" />
+                            <source srcset="./images/projects1-mob-1x.jpg 1x,
+                                         ./images/projects1-mob-2x.jpg 2x"
+                                         media="max-width:767px" />
+                            <img class="projects__image" src="./images/projects1-mob-1x.jpg" alt="Технокряк">
+                        </picture>
                         <p class="projects__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                             дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
@@ -66,8 +77,19 @@
                 </li>
                 <li class="projects__item">
                     <div class="projects__wrap">
-                      <img class="projects__image" src="./images/portfolio2.jpg" alt="Дизайн" width="370" height="404">
-                       <p class="projects__text">Ресурс пропонує створення оригінального дизайну реклами, презентацій, постерів для бізнесу і приватних осіб.</p>
+                    <picture>    
+                        <source srcset="./images/projects2-desk-1x.jpg 1x,
+                        ./images/projects2-desk-2x.jpg 2x"
+                        media="min-width:1200px" />
+                       <source srcset="./images/projects2-tab-1x.jpg 1x,
+                        ./images/projects2-tab-2x.jpg 2x"
+                        media="min-width:768px" />
+                       <source srcset="./images/projects2-mob-1x.jpg 1x,
+                        ./images/projects2-mob-2x.jpg 2x"
+                        media="max-width:767px" />
+                      <img class="projects__image" src="./images/projects2-mob-1x.jpg" alt="Дизайн">
+                    </picture>  
+                      <p class="projects__text">Ресурс пропонує створення оригінального дизайну реклами, презентацій, постерів для бізнесу і приватних осіб.</p>
                     </div>
                    <div class="projects__container"> <h2 class="projects__name" >Постер New Orlean vs Golden Star</h2>
                     <p class="projects__value">Дизайн</p>
@@ -75,8 +97,19 @@
                  </li>
                 <li class="projects__item">
                     <div class="projects__wrap">
-                      <img class="projects__image" src="./images/portfolio3.jpg" alt="Додаток" width="370" height="404">
-                      <p class="projects__text">Додаток дозволяє швидко і зручно замовити їжу на будь-який смак. Однією з найкращих функцій є перегляд в режимі офлайн, тому ви можете переглядати ресторани без з’єднання з Інтернетом.</p>
+                        <picture>    
+                            <source srcset="./images/projects3-desk-1x.jpg 1x,
+                            ./images/projects3-desk-2x.jpg 2x"
+                            media="min-width:1200px" />
+                           <source srcset="./images/projects3-tab-1x.jpg 1x,
+                            ./images/projects3-tab-2x.jpg 2x"
+                            media="min-width:768px" />
+                           <source srcset="./images/projects3-mob-1x.jpg 1x,
+                            ./images/projects3-mob-2x.jpg 2x"
+                            media="max-width:767px" />
+                      <img class="projects__image" src="./images/projects3-mob-1x.jpg" alt="Додаток">
+                      </picture>
+                      <p class="projects__text">Додаток дозволяє швидко і зручно замовити їжу на будь-який смак. Однією з найкращих функцій є перегляд в режимі офлайн.</p>
                     </div>
                    <div class="projects__container"><h2 class="projects__name" >Ресторан Seafood</h2>
                     <p class="projects__value">Додаток</p>
@@ -84,8 +117,19 @@
                 </li>
                 <li class="projects__item">
                     <div class="projects__wrap">
-                      <img class="projects__image" src="./images/portfolio4.jpg" alt="Маркетинг" width="370" height="404">
-                       <p class="projects__text">Головна перевага реклами на радіо - дешевизна і масовість, адже погодьтеся, майже всі слухають радіо.</p>
+                        <picture>    
+                            <source srcset="./images/projects4-desk-1x.jpg 1x,
+                            ./images/projects4-desk-2x.jpg 2x"
+                            media="min-width:1200px" />
+                           <source srcset="./images/projects4-tab-1x.jpg 1x,
+                            ./images/projects4-tab-2x.jpg 2x"
+                            media="min-width:768px" />
+                           <source srcset="./images/projects4-mob-1x.jpg 1x,
+                            ./images/projects4-mob-2x.jpg 2x"
+                            media="max-width:767px" />
+                      <img class="projects__image" src="./images/projects4-mob-1x.jpg" alt="Маркетинг">
+                      </picture>
+                      <p class="projects__text">Головна перевага реклами на радіо - дешевизна і масовість, адже погодьтеся, майже всі слухають радіо.</p>
                     </div>
                    <div class="projects__container"><h2 class="projects__name" >Проект Prime</h2>
                    <p class="projects__value">Маркетинг</p>
@@ -93,9 +137,20 @@
                 </li>
                 <li class="projects__item">
                     <div class="projects__wrap">
-                    <img class="projects__image" src="./images/portfolio5.jpg" alt="Додаток" width="370" height="404">
-                     <p class="projects__text">Додаток дозволяє користувачам переглядати каталог товарів на своєму смартфоні, відображає різну корисну
-                    інформацію, дозволяє викликати чат для спілкування з представником інтернет-магазину.</p>
+                        <picture>    
+                            <source srcset="./images/projects5-desk-1x.jpg 1x,
+                            ./images/projects5-desk-2x.jpg 2x"
+                            media="min-width:1200px" />
+                           <source srcset="./images/projects5-tab-1x.jpg 1x,
+                            ./images/projects5-tab-2x.jpg 2x"
+                            media="min-width:768px" />
+                           <source srcset="./images/projects5-mob-1x.jpg 1x,
+                            ./images/projects5-mob-2x.jpg 2x"
+                            media="max-width:767px" />
+                    <img class="projects__image" src="./images/projects5-mob-1x.jpg" alt="Додаток">
+                     </picture>
+                    <p class="projects__text">Додаток дозволяє користувачам переглядати каталог товарів на своєму смартфоні, відображає різну корисну
+                    інформацію.</p>
                     </div>
                   <div class="projects__container"><h2 class="projects__name" >Проект Boxes</h2>
                     <p class="projects__value">Додаток</p>
@@ -103,7 +158,18 @@
                 </li>
                 <li class="projects__item">
                     <div class="projects__wrap">
-                      <img class="projects__image" src="./images/portfolio6.jpg" alt="Веб-сайт" width="370" height="404">
+                        <picture>    
+                            <source srcset="./images/projects6-desk-1x.jpg 1x,
+                            ./images/projects6-desk-2x.jpg 2x"
+                            media="min-width:1200px" />
+                           <source srcset="./images/projects6-tab-1x.jpg 1x,
+                            ./images/projects6-tab-2x.jpg 2x"
+                            media="min-width:768px" />
+                           <source srcset="./images/projects6-mob-1x.jpg 1x,
+                            ./images/projects6-mob-2x.jpg 2x"
+                            media="max-width:767px" />
+                      <img class="projects__image" src="./images/projects6-mob-1x.jpg" alt="Веб-сайт">
+                      </picture>
                       <p class="projects__text">Це не просто вебсторінка, а захопливий онлайн-досвід та віртуальна капсула часу.</p>
                     </div>
                    <div class="projects__container"><h2 class="projects__name" >Inspiration has no Borders</h2>
@@ -112,7 +178,18 @@
                 </li>
                 <li class="projects__item">
                     <div class="projects__wrap">
-                      <img class="projects__image" src="./images/portfolio7.jpg" alt="Дизайн" width="370" height="404">
+                        <picture>    
+                            <source srcset="./images/projects7-desk-1x.jpg 1x,
+                            ./images/projects7-desk-2x.jpg 2x"
+                            media="min-width:1200px" />
+                           <source srcset="./images/projects7-tab-1x.jpg 1x,
+                            ./images/projects7-tab-2x.jpg 2x"
+                            media="min-width:768px" />
+                           <source srcset="./images/projects7-mob-1x.jpg 1x,
+                            ./images/projects7-mob-2x.jpg 2x"
+                            media="max-width:767px" />
+                      <img class="projects__image" src="./images/projects7-mob-1x.jpg" alt="Дизайн">
+                      </picture>
                       <p class="projects__text">Журнал про гарні речі, інтер'єри, будинки, дизайнерів, архітекторів, події у світі промислового дизайну та архітектури.</p>
                     </div>
                   <div class="projects__container"><h2 class="projects__name" >Видання Limited Edition</h2>
@@ -121,9 +198,20 @@
                 </li>
                 <li class="projects__item">
                     <div class="projects__wrap">
-                     <img class="projects__image" src="./images/portfolio8.jpg" alt="Маркетинг" width="370" height="404">
+                        <picture>    
+                            <source srcset="./images/projects8-desk-1x.jpg 1x,
+                            ./images/projects8-desk-2x.jpg 2x"
+                            media="min-width:1200px" />
+                           <source srcset="./images/projects8-tab-1x.jpg 1x,
+                            ./images/projects8-tab-2x.jpg 2x"
+                            media="min-width:768px" />
+                           <source srcset="./images/projects8-mob-1x.jpg 1x,
+                            ./images/projects8-mob-2x.jpg 2x"
+                            media="max-width:767px" />
+                     <img class="projects__image" src="./images/projects8-mob-1x.jpg" alt="Маркетинг">
+                     </picture>
                      <p class="projects__text">Чи можна ввімкнути в собі креатив? А яку стратегію використав для цього знаменитого мультиплікатор Волт Дісней? Нові ідеї
-                    - це те, що змушує цей світ дихати та стрімголов летіти вперед.</p>
+                    - це те, що змушує цей світ дихати.</p>
                     </div>
                    <div class="projects__container"> <h2 class="projects__name" >Проект LAB</h2>
                     <p class="projects__value">Маркетинг</p>
@@ -131,9 +219,20 @@
                 </li>
                 <li class="projects__item"> 
                     <div class="projects__wrap">
-                      <img class="projects__image" src="./images/portfolio9.jpg" alt="Додаток" width="370" height="404">
+                        <picture>    
+                            <source srcset="./images/projects9-desk-1x.jpg 1x,
+                            ./images/projects9-desk-2x.jpg 2x"
+                            media="min-width:1200px" />
+                           <source srcset="./images/projects9-tab-1x.jpg 1x,
+                            ./images/projects9-tab-2x.jpg 2x"
+                            media="min-width:768px" />
+                           <source srcset="./images/projects9-mob-1x.jpg 1x,
+                            ./images/projects9-mob-2x.jpg 2x"
+                            media="max-width:767px" />
+                      <img class="projects__image" src="./images/projects9-mob-1x.jpg" alt="Додаток">
+                      </picture>
                       <p class="projects__text">Ресурс підтримує всю команду на зв’язку та зосереджує на щоденній роботі. В додатку можна встановити дедлайни, намітити всі
-                    етапи різних проектів і відстежувати реалізацію в одному місці.</p>
+                    етапи різних проектів.</p>
                     </div>
                  <div class="projects__container"> <h2 class="projects__name" >Growing Business</h2>
                     <p class="projects__value">Додаток</p>

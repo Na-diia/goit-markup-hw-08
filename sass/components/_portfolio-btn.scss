@@ -2,6 +2,7 @@
 .buttons__list {
     margin-bottom: 50px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 	column-gap: 8px;
 
@@ -9,9 +10,15 @@
         margin-top: 60px;
         margin-bottom: 40px;
 	    row-gap: 15px;
-    }
+        justify-content: start;
+    } 
 
-    
+    @media screen and (min-width: 768px) and (max-width:119px) {
+        margin-top: 60px;
+        margin-bottom: 30px;
+	    gap:8px;
+        justify-content: center;
+    }
 }
 
 .buttons__item {
@@ -24,7 +31,7 @@
 
     border: 1px solid transparent;
     border-radius: 4px;
-    padding: 6px 22px;
+    padding: 6px 25px;
     min-height: 38px;
 
     transition: background-color, color, box-shadow 300ms $timingFunction;

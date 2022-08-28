@@ -4,7 +4,7 @@
     row-gap: $cardSetGap;
     column-gap: $cardSetGap;
 
-    @media screen and (min-width:480px) {
+    @media screen and (min-width:480px) and (max-width:767px){
         display: block;
     }
 
@@ -13,11 +13,13 @@
 
         @media screen and (min-width:480px) {
             margin-bottom: 30px;
+        } 
+        
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
         }
-      
-       @media screen and (min-width:767px) and (max-width: 1199px){
-        max-width: calc((100% - 30px) / 2 );
-       }       
     }
 
    &__wrap {
@@ -35,9 +37,14 @@
        padding-bottom: 20px;
        padding-left: 24px;
 
-       @media screen and (min-width:480px) {
+       @media screen and (min-width:480px) and (max-width:767px) {
         width: 450px;
         margin-bottom: 60px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            width: 354px;
+            padding-bottom: 56px;
         }
     }
 
@@ -76,6 +83,10 @@
 
     @media screen and (min-width:480px) {
         padding:77px 24px;
+    }
+
+    @media screen and (min-width:768px) {
+       padding:49px 24px 77px 24px;
     }
 
     .projects__item:hover & {
