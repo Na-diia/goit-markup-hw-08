@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
 <body>
     <header class="header"> 
 <div class="container header-container">
- <a class="logo link" href="" target="_blank" title="Головна сторінка"><span class="logo__text">Web</span>Studio</a>
+ <a class="logo " href="" target="_blank" title="Головна сторінка"><span class="logo__text">Web</span>Studio</a>
  <div class="menu-container">
  <nav class="navigation">
   <ul class="navigation__list ">
@@ -27,14 +27,12 @@
  <ul class="contacts flex ">
 <li class="contacts__item"><a class="contacts__email" href="malito:info@devstudio.com"><svg class="contacts--email-icon" width="16px" height="12px"><use href="./images/icons.svg#icon-envelope"></use> </svg>info@devstudio.com</a></li>
 <li class="contacts__item"><a class="contacts__tel" href="+380961111111"><svg class="contacts--tel-icon" width="10px" height="16px"><use href="./images/icons.svg#icon-tel"></use></svg>+380 96 111 11 11</a></li>
- </ul></div>
+ </ul></div></div>
  <button class="menu-open" aria-expanded="false" aria-controls="mobile-menu" type="button">
     <svg>
       <use href="./images/icons.svg" width="24px" height="16px"></use>
     </svg>
-</div>
- </div>
- <div class="mob-menu" id="mob-menu">
+ <div class="mobile-menu" id="mobile-menu">
     <div class="mob-menu__container">
     <button type="button" class="mob-menu__btn is-open"
     data-menu-button
@@ -155,7 +153,6 @@
                                 ./images/workers1-mob-2x.jpg   2x"
                         media="max-width:767px"/>
             <img src="./images/workers1-mob-1x.jpg"
-            src="images/worker1.jpg" 
             alt="Наш працівник">
             </picture>
         <div class="workers--secondary-box"><h3 class="workers__name">Ігор Демьяненко</h3>
