@@ -69,7 +69,7 @@
     @media screen and (min-width:1200px){
         padding-bottom: 32px;
         padding-top: 32px;
-         margin-left: 318px;
+        margin-left: 318px;
     }
 
     &__wrap {
@@ -79,24 +79,10 @@
         padding-top: 21px;
      }
     }
-}
 
-
-       
-.contacts__tel { color: $firstTextColor;
-    transition: color 250ms $timingFunction;
-
-    @media screen and (min-width:1200px){
-    margin-left: 30px;
-    }
-}
-
-.contacts__email {transition: color 250ms $timingFunction;
-    color: $firstTextColor;
-
-    @media screen and (min-width:768px) and (max-width:1199px) {
-      margin-bottom: 10px;
-    }
+    // &__item{
+     
+    // }
 }
 
 .contacts--email-icon,
@@ -125,14 +111,23 @@
         width: 10px;
         height: 14px;
     }
+
+    .contacts__email {
+    margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .contacts--tel-icon{
+    margin-left: 30px;}
 }
 
 .contacts__tel,
 .contacts__email {
-    @media screen and (min-width:1200px) {
+    transition: color 250ms $timingFunction;
     @include font(14px, 1.14, 500, 0.02em);
     font-style: normal;
-    color: $firstTextColor;}
+    color: $firstTextColor;
 
     @media screen and (min-width:768px) and (max-width:1199px) {
         @include font(12px, 1.16, 500, 0.02em);

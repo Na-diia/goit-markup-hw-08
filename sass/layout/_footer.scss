@@ -6,6 +6,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+
     &-container {
         display: flex;
         align-items: baseline;
@@ -17,7 +18,7 @@
         @media screen and (min-width:768px) and (max-width:1199px) {
             display: flex; 
             flex-wrap: wrap;
-            text-align: center;
+            text-align: center; 
         }
     }
 
@@ -43,13 +44,20 @@
         @include font(14px, 1.14, 700, 0.03em);
         text-transform: uppercase;
         color: $secondTitleColor;
+        margin-bottom: 20px; 
     
-        margin-bottom: 20px;
+        &-wrap{
+             
+            @media screen and (min-width:768px) and (max-width:1199px) {
+               flex-basis: 100%;
+            }
+        }        
 
         @media screen and (min-width:320px) and (max-width:1199px) {
             text-align: center;
             align-items: center;
             margin-top: 60px;
+            flex-basis: 100%;
         }
     }
 }
@@ -94,6 +102,10 @@
 
     @media screen  and (min-width:1200px){
         margin-left: 70px; 
+    }
+
+    @media screen  and (min-width:320px) and (max-width:767px){
+       margin-top: 60px;
     }
   
     &__list {
