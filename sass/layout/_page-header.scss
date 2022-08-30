@@ -1,12 +1,12 @@
 .header {
     align-items: center;
     border-bottom: 1px solid #ECECEC;
-    position: relative;
 
     &-container {
         display: flex;
         justify-content: space-between;
-        align-items: center;   
+        align-items: center;  
+        position: relative; 
     }
 }
 
@@ -29,7 +29,8 @@
     color: $firstTitleColor;
     padding-top: 32px;
     padding-bottom: 32px;
-    display: block;}
+    display: block;  
+    }
 
     &__anchor {
      @extend .navigation__link;
@@ -45,7 +46,7 @@
     background-color: $accentColor;
     border-radius: 2px;
     position: absolute;
-    left: 0;
+    left: 0px;
     bottom: 0;
 }
 
@@ -64,20 +65,15 @@
 .contacts {
      @media screen and (min-width:768px) and (max-width:1199px) {
     display: block;
-    margin-left: 96px;}
+    margin-bottom: 21px;
+    margin-top: 21px;
+    margin-left: 90px;}
     
     @media screen and (min-width:1200px){
         padding-bottom: 32px;
         padding-top: 32px;
-        margin-left: 318px;
-    }
-
-    &__wrap {
-       
-     @media screen and (min-width:768px) and (max-width:1199px) {
-        padding-bottom: 21px;
-        padding-top: 21px;
-     }
+        margin-left: 315px;
+        display: flex;
     }
 }
 
@@ -86,7 +82,7 @@
     fill: currentColor;
     background-position: center;
     background-size: contain;
-    transition: color 250ms $timingFunction;
+    transition: fill 250ms $timingFunction;
 
     @media screen and (min-width:768px) and (max-width:1199px) {
         margin-right: 8px;
@@ -109,12 +105,12 @@
     }
 
     .contacts__email {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     }
 }
 
 @media screen and (min-width:1200px){
-    .contacts--tel-icon{
+    .contacts__tel{
     margin-left: 30px;}
 }
 
@@ -124,6 +120,7 @@
     @include font(14px, 1.14, 500, 0.02em);
     font-style: normal;
     color: $firstTextColor;
+    display: flex;
 
     @media screen and (min-width:768px) and (max-width:1199px) {
         @include font(12px, 1.16, 500, 0.02em);

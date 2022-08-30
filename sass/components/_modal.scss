@@ -28,7 +28,12 @@
 
     transition: border-color 250ms $timingFunction;
 
-    @media screen and (min-width:320px) and (max-width:1199px) {
+    @media screen and (min-width:320px) and (max-width:479px) {
+        width: 240px;
+        padding-left: 22px;
+    }
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
         width: 370px;
     }
 
@@ -73,7 +78,13 @@
     display: flex;
     align-items: center;
 
-    @media screen and (min-width:320px) and (max-width:1199px) {
+    @media screen and (min-width:320px) and (max-width:479px) {
+        @include font(10px, 1.16, 400, 0.03em);
+        margin-left: 6px;
+        align-items: center;
+    }
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
        @include font(12px, 1.16, 400, 0.03em);
        margin-left: 8px;
        align-items: center;
@@ -132,6 +143,12 @@
 
     transition: background-color 250ms $timingFunction;
 
+    @media screen and(min-width:320px) and (max-width:479px){
+        @include font(14px, 1.87, 700, 0.06em);
+        padding:8px 48px ;
+        width: 170px;
+    }
+
     &:focus,
     &:hover {
         background: $hoverBtnColor;
@@ -149,7 +166,11 @@
 
     transition: border-color 250ms $timingFunction;
      
-    @media screen and (min-width:320px) and (max-width:1199px) {
+    @media screen and (min-width:320px) and (max-width:479px) {
+        width: 240px;
+    }
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
         width: 370px;
     }
 

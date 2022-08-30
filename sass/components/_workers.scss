@@ -20,7 +20,6 @@
 
         @media screen and(min-width:480px){
             width: 450px;
-            margin-bottom: 30px;
         }
 
         @media screen and(min-width:768px) and (max-width:1199px){
@@ -35,6 +34,10 @@
     &--secondary-box {
         padding-top: 30px;
         padding-bottom: 30px;
+
+        @media screen and(min-width:480px) and (max-width:767px){
+            padding-bottom: 36px;
+        }
 
         @media screen and(min-width:1200px){
             margin-bottom: 30px;

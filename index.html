@@ -28,40 +28,41 @@
 <li class="contacts__item"><a class="contacts__email" href="malito:info@devstudio.com"><svg class="contacts--email-icon" width="16px" height="12px"><use href="./images/icons.svg#icon-envelope"></use> </svg>info@devstudio.com</a></li>
 <li class="contacts__item"><a class="contacts__tel" href="+380961111111"><svg class="contacts--tel-icon" width="10px" height="16px"><use href="./images/icons.svg#icon-tel"></use></svg>+380 96 111 11 11</a></li>
  </ul></div></div>
- <button class="menu-open" aria-expanded="false" aria-controls="mobile-menu" type="button">
-    <svg>
-      <use href="./images/icons.svg" width="24px" height="16px"></use>
+ <button class="menu-open" type="button">
+    <svg class="menu-open__icon">
+        <use href="./images/icons.svg#icon-menu" width="40px" height="40px"></use>
     </svg>
- <div class="mobile-menu" id="mobile-menu">
-    <div class="mob-menu__container">
-    <button type="button" class="mob-menu__btn is-open"
-    data-menu-button
-    aria-expanded="false">
-        <svg>
-            <use href="./images/icons.svg#icon-vector"  class="icon-close" height="18.67px" width="18.67px"></use>
+</button>
+</div>
+<div class="mob is-hidden">
+    <div class="container">
+    <div class="mob-menu-top">
+    <button class="menu-close">
+        <svg class="menu-close__icon">
+            <use href="./images/icons.svg#icon-vector" width="18.67px" height="18.67px"></use>
         </svg>
     </button>
-    <nav class="mob-menu__nav">
-        <ul class="mob-menu__list">
-            <li class="mob-menu__item">Студія</li>
-            <li class="mob-menu__item">Портфоліо</li>
-            <li class="mob-menu__item">Контакти</li>
-        </ul>
-    </nav>   
-    <div class="mob-menu__commun">
-      <ul class="mob-menu__contacts">
-        <li class="mob-menu--tel"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-        <li class="mob-email--item"><a href="malito:info@devstudio.com">info@devstudio.com</a></li>
-      </ul>
-<ul class="mob-menu__soc">
-    <li><a href="" >Instagram</a></li>
-    <li><a href="" >Twitter</a></li>
-    <li><a href="" >Facebook</a></li>
-    <li><a href="" >LinkedIn</a></li>
-</ul>
-    </div> 
-    </div>
- </div>
+    <nav class="mob__navigation">
+     <ul class="mob__list ">
+        <li class="mob__item "><a class="mob__link" href="./index.html">Студія</a></li>
+        <li class="mob__item"><a class="mob__link" href="./portfolio.html">Портфоліо</a></li>
+        <li class="mob__item"><a class="mob__link" href="./contacts.html">Контакти</a></li>
+    </ul>
+    </nav></div>
+    <div class="mob-menu-bottom">
+    <div class="connect">
+    <ul class="connect__list ">
+   <li class="connect__item"><a class="connect__tel" href="+380961111111">+380 96 111 11 11</a></li>
+   <li><a class="connect__email" href="malito:info@devstudio.com">info@devstudio.com</a></li>
+    </ul>
+    <ul class="connect-soc">
+        <li class="connect-soc__item"><a class="connect-soc__link" href="">Instagram</a></li>
+        <li class="connect-soc__item"><a class="connect-soc__link" href="">Twitter</a></li>
+        <li class="connect-soc__item"><a class="connect-soc__link" href="">Facebook</a></li>
+        <li class="connect-soc__item"><a class="connect-soc__link" href="">LinkedIn</a></li>
+    </ul></div>
+    </div></div>
+   </div>
 </header>
 <main> 
     <section class="hero section">
@@ -145,13 +146,13 @@
             <picture>
                 <source srcset="./images/workers1-desk-1.jpg   1x, 
                                ./images/workers1-desk-2x.jpg   2x" 
-                        media="min-width:1200px"/>
+                        media="(min-width:1200px)"/>
                 <source srcset="./images/workers1-tab-1x.jpg  1x, 
                                ./images/workers1-tab-2x.jpg  2x"
-                         media="min-width:768px"/>
+                         media="(min-width:768px)"/>
                 <source srcset="./images/workers1-mob-1x.jpg   1x, 
                                 ./images/workers1-mob-2x.jpg   2x"
-                        media="max-width:767px"/>
+                        media="(max-width:767px)"/>
             <img src="./images/workers1-mob-1x.jpg"
             alt="Наш працівник">
             </picture>
@@ -173,13 +174,13 @@
          <picture>
             <source srcset="./images/workers2-desk-1.jpg  1x,
                            ./images/workers2-desk-2x.jpg  2x"
-                           media="min-width=1200px"/>
+                           media="(min-width:1200px)"/>
            <source srcset="./images/workers2-tab-1x.jpg  1x,  
                           ./images/workers2-tab-2x.jpg  2x"
-                         media="min-width:768px" />  
+                         media="(min-width:768px)" />  
             <source srcset="./images/workers2-mob-1x.jpg  1x, 
                             ./images/workers2-mob-2x.jpg  2x"
-                        media="max-width:767px">    
+                        media="(max-width:767px)">    
              <img src="./images/workers2-mob-1x.jpg" alt="Наш працівник">                    
          </picture>
         <div class="workers--secondary-box"><h3 class="workers__name">Ольга Репіна</h3>
@@ -198,13 +199,13 @@
         <picture>
           <source srcset="./images/workers3-desk-1.jpg  1x,
                           ./images/workers3-desk-2x.jpg  2x"
-                          media="min-width:1200px" />
+                          media="(min-width:1200px)" />
              <source srcset="./images/workers3-tab-1x.jpg  1x, 
                             ./images/workers3-tab-2x.jpg  2x"
-                            media="min-width:768px" />   
+                            media="(min-width:768px)" />   
               <source srcset="./images/workers3-mob-1x.jpg  1x, 
                             ./images/workers3-mob-2x.jpg  2x"
-                         media="max-width:767px">            
+                         media="(max-width:767px)">            
             <img src="./images/workers3-mob-1x.jpg" alt="Наш працівник">
         </picture>
        <div class="workers--secondary-box"><h3 class="workers__name">Микола Тарасов</h3>
@@ -226,13 +227,13 @@
         <picture>
             <source srcset="./images/workers4-desk-1.jpg  1x, 
                             ./images/workers4-desk-2x.jpg  2x"
-                            media="min-width:1200px" />
+                            media="(min-width:1200px)" />
             <source srcset="./images/workers4-tab-1x.jpg  1x,
                             ./images/workers4-tab-2x.jpg  2x"
-                            media="min-width:768px" />
+                            media="(min-width:768px)" />
             <source srcset="./images/workers4-mob-1x.jpg  1x,
                             ./images/workers4-mob-2x.jpg  2x"
-                            media="max-width:767px" />              
+                            media="(max-width:767px)" />              
             <img src="./images/workers4-mob-1x.jpg" alt="Наш працівник">
         </picture>
        <div class="workers--secondary-box"><h3 class="workers__name">Михайло Єрмаков</h3>
