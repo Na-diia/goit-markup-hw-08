@@ -8,17 +8,23 @@
         display: block;
     }
 
+    &__item:last-child{
+       @media screen and (min-width:320px) and (max-width:1199px){
+           margin-bottom: 60px;}
+    }
+
     & li {
         flex-basis: calc((100% - 2*30px) / 3);
 
-        @media screen and (min-width:320px) {
-            margin-bottom: 30px;
-        } 
-        
         @media screen and (min-width:768px)  and (max-width:1199px){
             display: flex;
             flex-wrap: wrap;
-            gap: 30px;
+        }
+    }
+
+    &__item:not(:last-child){
+        @media screen  and (min-width:320px) and (max-width:767px){
+            margin-bottom: 30px;
         }
     }
 
@@ -37,22 +43,17 @@
        padding-bottom: 20px;
        padding-left: 24px;
 
-       @media screen and (min-width:320px) {
-        width: 280px;
-        margin-bottom: 40px;}
+       @media screen and (min-width:320px) and (max-width:479px) {
+        width: 290px;
+        margin-bottom: 30px;}
 
        @media screen and (min-width:480px) and (max-width:767px) {
         width: 450px;
-        margin-bottom: 60px;
         }
 
         @media screen and (min-width:768px) and (max-width:1199px) {
             width: 354px;
             padding-bottom: 56px;
-        }
-
-        @media screen and (min-width:1200px) {
-            width: 370px; 
         }
     }
 
@@ -86,22 +87,23 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(101%);
+    transform: translateY(100%);
     transition: transform 250ms $timingFunction;
-
-    @media screen and (min-width:320px) {
-        padding:67px 24px;
-    }
-
-    @media screen and (min-width:480px) {
-        padding:77px 24px;
-    }
-
-    @media screen and (min-width:768px) {
-       padding:49px 24px 77px 24px;
-    }
 
     .projects__item:hover & {
         transform: translate(0%);
+    }
+
+    @media screen  and (min-width:320px) and (max-width:479px) {
+        @include font(15px, 1.55, 400, 0.03em);
+        padding:34px 14px;
+    }
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+        padding:77px 24px;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px){
+       padding:49px 24px 77px 24px;
     }
 }

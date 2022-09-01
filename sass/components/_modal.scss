@@ -4,6 +4,12 @@
     color: $firstTitleColor;
 
     margin-bottom: 12px;
+
+    
+    @media screen and (max-width:479px){
+        @include font(18px, 1.15, 700, 0.03em);  
+        margin-bottom: 5px;
+    }
 }
 
 .modal__field {
@@ -30,7 +36,7 @@
 
     @media screen and (min-width:320px) and (max-width:479px) {
         width: 240px;
-        padding-left: 22px;
+        padding-left: 36px;
     }
 
     @media screen and (min-width:480px) and (max-width:1199px) {

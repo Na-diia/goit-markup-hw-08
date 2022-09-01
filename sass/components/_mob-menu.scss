@@ -15,7 +15,7 @@
     }
 
     @media screen and (max-width:479px){
-        padding: 10px 1px 32px 32px;
+        padding: 10px 1px 28px 28px;
     }
 
     &__item:not(:last-child) {
@@ -86,7 +86,6 @@
     @media screen and (max-width:479px){
         @include font(26px, 1.14, 500, 0.02em);
     }
-
 }
 
 .connect-soc {
@@ -109,7 +108,7 @@
         color: $accentColor;
 
         @media screen and (max-width:479px){
-            @include font(15px, 1.14, 500, 0.02em);
+            @include font(12px, 1.14, 500, 0.02em);
         }
     }
 }
